@@ -7,7 +7,8 @@
 def call(String PodLabel, code) {
 	podTemplate(
 		cloud: 'kubernetes-Cluster1'
-		label: 'general-pod-label-cluster1'
+		label: PodLabel
+		name: PodLabel
 		containers: [
 			containerTemplate(
 				name: ubuntu-image
