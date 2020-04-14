@@ -1,5 +1,3 @@
-#!/usr/bin/env groovy
-
 def call(String PodLabel, code) {
 	podTemplate(
 		cloud: 'kubernetes-Cluster2',

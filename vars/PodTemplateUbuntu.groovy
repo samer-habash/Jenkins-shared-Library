@@ -4,18 +4,34 @@
 // They just define it as random label like below:
 //                                               def podLabel = "worker-${UUID.randomUUID()}"
 
-def call(String PodLabel, code) {
+def call(Map params, code) {
 	podTemplate(
-		cloud: 'kubernetes-Cluster1'
-		label: PodLabel
-		name: PodLabel
+		cloud: params.Cloud,
+		label: params.Label,
 		containers: [
 			containerTemplate(
-				name: ubuntu-image
-				image: ubuntu:bionic
-				command: 'cat'
+				name: params.Name,
+				image: params.Image,
+				command: 'cat',
 				tty: 'true')
 		]) {
 		code()
 	}
 }
+
+// @Library('General-Shared-Library@master')
+//
+// PodTemplateUbuntu(
+//     Cloud: 'kubernetes-Cluster1'
+//     Label: 'general-pod-label-cluster1'
+//     Name: 'ubuntu-image'
+//     Image: 'ubuntu:bionic')
+//     {
+//     node('general-pod-label-cluster1') {
+// 		stage('Check Ubuntu Release') {
+// 		    container('ubuntu-image') {
+// 		        sh "cat /etc/*-release"
+// 			}
+// 		}
+// 	}
+// }

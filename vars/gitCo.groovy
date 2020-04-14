@@ -7,3 +7,19 @@ def call(Map gitcoParams) {
         userRemoteConfigs: [[ url: gitcoParams.url ]]
     ])
   }
+
+// @Library('jenkins-library@master')
+//
+// pipeline {
+//     agent any
+//     stages {
+//         stage('Git Checkout') {
+//             steps {
+//             gitCheckout(
+//                 branch: "master",
+//                 url: "https://github.com/spring-projects/spring-petclinic.git"
+//             )
+//             }
+//          }
+//     }
+// }
