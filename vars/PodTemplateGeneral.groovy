@@ -14,11 +14,26 @@ def call(Map podParams, code) {
 		node(podParams.cloud) {
 		    stage('Check Maven Release') {
 		        container(podParams.name) {
-
-		code()
+		            code()
+		        }
+		    }
+		}
 	}
 }
 
+
+// @Library('general-jenkins-library@master') _
+//
+// PodTemplateGeneral(
+//     cloud: 'kubernetes-Cluster2',
+//     label:'general-pod-label-cluster2',
+//     name: 'maven-image',
+//     image: 'maven:3.3.9-jdk-8-alpine'
+// 	)
+// 	    sh "cat /etc/*-release"
+
+
+// Working:
 // #!/usr/bin/env groovy
 //
 // def call(Map podParams, code) {
@@ -37,24 +52,17 @@ def call(Map podParams, code) {
 // }
 
 
-
-
-
 // @Library('general-jenkins-library@master') _
 //
-// pipeline {
-//     agent any
-//     stages {
-//         stage('Template') {
-//             steps {
-//             PodTemplateGeneral(
-//                 cloud: "kubernetes-Cluster2",
-//                 label: "general-pod-label-cluster2",
-//                 name: "maven-image",
-//                 image: "maven:3.3.9-jdk-8-alpine")
-//                 sh 'cat /etc/*-release'
-//             }
-//         }
-//     }
+// PodTemplateGeneral(cloud: 'kubernetes-Cluster2', label:'general-pod-label-cluster2', name: 'maven-image', image: 'maven:3.3.9-jdk-8-alpine')
+//     {
+//         node('general-pod-label-cluster2') {
+// 		    stage('Check Maven Release') {
+// 		        container('maven-image') {
+// 		            sh "cat /etc/*-release"
+// 			}
+// 		}
+// 	}
 // }
+
 
