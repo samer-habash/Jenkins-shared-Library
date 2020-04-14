@@ -4,10 +4,10 @@
 // They just define it as random label like below:
 //                                               def podLabel = "worker-${UUID.randomUUID()}"
 
-def call(Map params, code) {
+def call(String PodLabel, code) {
 	podTemplate(
 		cloud: 'kubernetes-Cluster1',
-		label: 'general-pod-label-cluster1',
+		label: PodLabel,
 		containers: [
 			containerTemplate(
 				name: 'ubuntu-image',
