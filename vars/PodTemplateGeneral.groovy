@@ -11,10 +11,30 @@ def call(Map podParams, code) {
 				command: 'cat',
 				ttyEnabled: 'true')
 		]) {
+		node(podParams.cloud) {
+		    stage('Check Maven Release') {
+		        container(podParams.name) {
+
 		code()
 	}
 }
 
+// #!/usr/bin/env groovy
+//
+// def call(Map podParams, code) {
+// 	podTemplate(
+// 		cloud: podParams.cloud,
+// 		label: podParams.label,
+// 		containers: [
+// 			containerTemplate(
+// 				name: podParams.name,
+// 				image: podParams.image,
+// 				command: 'cat',
+// 				ttyEnabled: 'true')
+// 		]) {
+// 		code()
+// 	}
+// }
 
 
 
