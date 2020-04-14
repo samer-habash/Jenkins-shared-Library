@@ -2,18 +2,18 @@
 
 def call(Map kubernetesParams, code) {
 	kubernetes(
-		cloud: values.cloud,
-		label: values.label,
+		cloud: kubernetesParams.cloud,
+		label: kubernetesParams.label,
 		containers: [
 			containerTemplate(
-				name: values.name,
-				image: values.image,
+				name: kubernetesParams.name,
+				image: kubernetesParams.image,
 				command: 'cat',
 				ttyEnabled: 'true')
 		]) {
 		node(values.label) {
 		    stage('Building Container') {
-		        container(values.name) {
+		        container(kubernetesParams.name) {
 		           code()
 		        }
 		    }

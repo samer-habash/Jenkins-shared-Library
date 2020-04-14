@@ -16,7 +16,7 @@ def call(Map podParams, code) {
 }
 
 
-// Apply Locally in Jenkins
+// Apply Locally in Jenkins and change per your configuration in cloud settings in Jenkins
 // @Library('general-jenkins-library@master') _
 //
 // PodTemplateGeneral(cloud: 'kubernetes-Cluster2', label:'general-pod-label-cluster2', name: 'maven-image', image: 'maven:3.3.9-jdk-8-alpine')
