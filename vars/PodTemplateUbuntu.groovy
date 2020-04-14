@@ -6,12 +6,12 @@
 
 def call(Map params, code) {
 	podTemplate(
-		cloud: params.cloud,
-		label: params.label,
+		cloud: 'kubernetes-Cluster1',
+		label: 'general-pod-label-cluster1',
 		containers: [
 			containerTemplate(
-				name: params.name,
-				image: params.image,
+				name: ubuntu-image,
+				image: ubuntu:bionic,
 				command: 'cat',
 				tty: 'true')
 		]) {
