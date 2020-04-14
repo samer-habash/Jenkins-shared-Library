@@ -1,19 +1,19 @@
 #!/usr/bin/env groovy
 
-def call(Map values, code) {
+def call(Map podParams, code) {
 	podTemplate(
-		cloud: values.cloud,
-		label: values.label,
+		cloud: podParams.cloud,
+		label: podParams.label,
 		containers: [
 			containerTemplate(
-				name: values.name,
-				image: values.image,
+				name: podParams.name,
+				image: podParams.image,
 				command: 'cat',
 				ttyEnabled: 'true')
 		]) {
-		node(values.label) {
+		node(podParams.label) {
 		    stage('Building Container') {
-		        container(values.name) {
+		        container(podParams.name) {
 		           code()
 		        }
 		    }
