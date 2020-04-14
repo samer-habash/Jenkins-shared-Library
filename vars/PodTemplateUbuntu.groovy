@@ -6,12 +6,12 @@
 
 def call(Map params, code) {
 	podTemplate(
-		cloud: params.Cloud,
-		label: params.Label,
+		cloud: params.cloud,
+		label: params.label,
 		containers: [
 			containerTemplate(
-				name: params.Name,
-				image: params.Image,
+				name: params.name,
+				image: params.image,
 				command: 'cat',
 				tty: 'true')
 		]) {
