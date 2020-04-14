@@ -13,7 +13,7 @@ def call(Map values, code) {
 		]) {
 		node(values.label) {
 		    stage('Building Container') {
-		        container(values.image) {
+		        container(values.name) {
 		           code()
 		        }
 		    }
