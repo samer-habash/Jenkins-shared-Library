@@ -17,24 +17,24 @@ def call(Map podParams, code) {
 
 
 
-// Local Jenkins Apply : # This took me a while to think how to build it best
+
+
+
 // @Library('general-jenkins-library@master') _
 //
 // pipeline {
 //     agent any
 //     stages {
-//         stage('Creating Pod') {
+//         stage('Template') {
 //             steps {
 //             PodTemplateGeneral(
-//                 cloud: "kubernetes-Cluster1",
-//                 label: "general-pod-label-cluster1",
-//                 name: "ubuntu-image",
-//                 image: "ubuntu:bionic"
-//                 )}
-//                 {
-//                     // Script or commands to apply on the image
-//                     sh 'cat /etc/*-release'
-//                 }
+//                 cloud: "kubernetes-Cluster2",
+//                 label: "general-pod-label-cluster2",
+//                 name: "maven-image",
+//                 image: "maven:3.3.9-jdk-8-alpine")
+//                 sh 'cat /etc/*-release'
+//             }
 //         }
 //     }
 // }
+
