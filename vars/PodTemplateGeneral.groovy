@@ -10,17 +10,8 @@ def call(Map podParams, code) {
 				image: podParams.image,
 				command: 'cat',
 				ttyEnabled: 'true')
-		]) {
-		node(podParams.label) {
-		    stage('Building Container') {
-		        container(podParams.name) {
-		           code()
-		        }
-		    }
-		}
+		])
 	}
-}
-
 
 
 
