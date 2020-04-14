@@ -1,0 +1,55 @@
+Jenkins Shared Library : 
+It is a tree shape library as below .
+
+Jenkins-shared-library:
+|
+|___ vars
+|___ src
+|___ resources
+
+vars: This directory holds all the global shared library code that can be called from a pipeline, it contains grrovy files and a help txt file , you can check the help file by <your-jenkins-url>/pipeline-syntax/globals 
+
+src: It is a regular java source directory. It is added to the classpath during every script compilation.
+In src you can add custom groovy code to extend yous shared library code.
+In src you can write custom groovy functions in src and call it in your shared library code.
+
+
+groovy DSL’s : Domain specific Language - the type of pipeline syntax with {,}, stage('var'), etc ...
+DSL's are meant to target a particular type of problem, which is like pipeline syntax :
+
+resources: All the non-groovy files required for your ur pipelines can be managed in this folder. One such example is, you might need a common JSON template to make an API call during the build. 
+resources folder and called can be called in the shared library using the libraryResource function.
+
+
+e.g 1 :-	git checkout function
+
+def call(Map stageParams) {
+ 
+    checkout([
+        $class: 'GitSCM',
+        branches: [[name:  stageParams.branch ]],
+        userRemoteConfigs: [[ url: stageParams.url ]]
+    ])
+  }
+  
+  
+def call(Map stageParams) – A simple call function which accepts a Map as an argument. From the pipeline stage, we will pass multiple arguments which get passed as a map to the shared library.
+  
+stageParams.branch – its the branch parameter which comes from the pipeline stage and we use stageParams to access that variable in the shared library.
+
+
+@Library('jenkins-library@master') _
+
+pipeline {
+    agent any
+    stages {
+        stage('Git Checkout') {
+            steps {
+            gitCheckout(
+                branch: "master",
+                url: "https://github.com/spring-projects/spring-petclinic.git"
+            )
+            }
+    	}
+    }
+}
