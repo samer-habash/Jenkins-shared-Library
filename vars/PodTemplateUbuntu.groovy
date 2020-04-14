@@ -10,8 +10,8 @@ def call(Map params, code) {
 		label: 'general-pod-label-cluster1',
 		containers: [
 			containerTemplate(
-				name: ubuntu-image,
-				image: ubuntu:bionic,
+				name: 'ubuntu-image',
+				image: 'ubuntu:bionic',
 				command: 'cat',
 				tty: 'true')
 		]) {
