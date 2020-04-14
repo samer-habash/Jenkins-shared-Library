@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call(Map podParams) {
+def call(Map podParams, code) {
 	podTemplate(
 		cloud: podParams.cloud,
 		label: podParams.label,
@@ -11,47 +11,12 @@ def call(Map podParams) {
 				command: 'cat',
 				ttyEnabled: 'true')
 		]) {
-		node(podParams.cloud) {
-		    stage('Check Maven Release') {
-		        container(podParams.name) {
-		            sh 'cat /etc/*-release'
-		        }
-		    }
-		}
+		code()
 	}
 }
 
 
-// @Library('general-jenkins-library@master') _
-//
-// PodTemplateGeneral(
-//     cloud: 'kubernetes-Cluster2',
-//     label:'general-pod-label-cluster2',
-//     name: 'maven-image',
-//     image: 'maven:3.3.9-jdk-8-alpine'
-// 	)
-// 	    sh "cat /etc/*-release"
-
-
-// Working:
-// #!/usr/bin/env groovy
-//
-// def call(Map podParams, code) {
-// 	podTemplate(
-// 		cloud: podParams.cloud,
-// 		label: podParams.label,
-// 		containers: [
-// 			containerTemplate(
-// 				name: podParams.name,
-// 				image: podParams.image,
-// 				command: 'cat',
-// 				ttyEnabled: 'true')
-// 		]) {
-// 		code()
-// 	}
-// }
-
-
+// Apply Locally in Jenkins
 // @Library('general-jenkins-library@master') _
 //
 // PodTemplateGeneral(cloud: 'kubernetes-Cluster2', label:'general-pod-label-cluster2', name: 'maven-image', image: 'maven:3.3.9-jdk-8-alpine')
