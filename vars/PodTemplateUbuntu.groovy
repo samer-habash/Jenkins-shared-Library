@@ -19,7 +19,7 @@ def call(String PodLabel, code) {
 	}
 }
 
-//Applies in local jenkins
+// Applies in local jenkins
 // @Library('general-jenkins-library@master') _
 //
 // PodTemplateUbuntu('general-pod-label-cluster1')

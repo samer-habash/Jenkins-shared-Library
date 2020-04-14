@@ -8,6 +8,8 @@ def call(Map gitcoParams) {
     ])
   }
 
+
+// Checkout git repo for maven
 // @Library('general-jenkins-library@master') _
 //
 // pipeline {
@@ -17,8 +19,16 @@ def call(Map gitcoParams) {
 //             steps {
 //             gitCo(
 //                 branch: "master",
-//                 url: "https://github.com/samer-habash/-hw-14-.git"
+//                 url: "https://github.com/web3j/sample-project-maven"
 //             )}
-//          }
-//     }
+//          stage('Build Maven') {
+//          PodTemplateMaven(('general-pod-label-cluster1')
+//     {
+//         node('general-pod-label-cluster1') {
+// 		    stage('Build Maven Release') {
+// 		        container('maven-image') {
+// 		            sh "mvn clean install"
+// 			}
+// 		}
+// 	}
 // }

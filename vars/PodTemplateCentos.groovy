@@ -14,3 +14,5 @@ def call(String PodLabel, code) {
 		code()
 	}
 }
+
+// Same as PodTemplateUbuntu.groovy file , just change the image name inside the container

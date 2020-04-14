@@ -15,18 +15,4 @@ def call(String PodLabel, code) {
 	}
 }
 
-//Applies in local jenkins
-// @Library('general-jenkins-library@master') _
-//
-// pipeline {
-//     agent any
-//     stages {
-//         stage('Git Checkout') {
-//             steps {
-//             gitCo(
-//                 branch: "master",
-//                 url: "https://github.com/samer-habash/-hw-14-.git"
-//             )}
-//          }
-//     }
-// }
+// Same as PodTemplateUbuntu.groovy file , just change the image name inside the container

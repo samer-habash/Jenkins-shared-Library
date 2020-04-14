@@ -11,7 +11,37 @@ def call(Map values, code) {
 				command: 'cat',
 				ttyEnabled: 'true')
 		]) {
-		code()
+		node(values.label) {
+		    stage('Building Container') {
+		        container(values.image) {
+		           code()
+		        }
+		    }
+		}
 	}
 }
 
+
+
+
+// Local Jenkins Apply : # This took me a while to think how to build it best
+// @Library('general-jenkins-library@master') _
+//
+// pipeline {
+//     agent any
+//     stages {
+//         stage('Creating Pod') {
+//             steps {
+//             PodTemplateGeneral(
+//                 cloud: "kubernetes-Cluster1",
+//                 label: "general-pod-label-cluster1",
+//                 name: "ubuntu-image",
+//                 image: "ubuntu:bionic"
+//                 )}
+//                 {
+//                     // Script or commands to apply on the image
+//                     sh 'cat /etc/*-release'
+//                 }
+//         }
+//     }
+// }
