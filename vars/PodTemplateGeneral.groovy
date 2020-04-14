@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call(Map podParams, code) {
+def call(Map podParams) {
 	podTemplate(
 		cloud: podParams.cloud,
 		label: podParams.label,
@@ -14,7 +14,7 @@ def call(Map podParams, code) {
 		node(podParams.cloud) {
 		    stage('Check Maven Release') {
 		        container(podParams.name) {
-		            code()
+		            sh 'cat /etc/*-release'
 		        }
 		    }
 		}
