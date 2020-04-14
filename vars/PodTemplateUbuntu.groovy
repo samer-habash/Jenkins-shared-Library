@@ -19,18 +19,15 @@ def call(String PodLabel, code) {
 	}
 }
 
-// @Library('General-Shared-Library@master')
+//Applies in local jenkins
+// @Library('general-jenkins-library@master') _
 //
-// PodTemplateUbuntu(
-//     Cloud: 'kubernetes-Cluster1'
-//     Label: 'general-pod-label-cluster1'
-//     Name: 'ubuntu-image'
-//     Image: 'ubuntu:bionic')
+// PodTemplateUbuntu('general-pod-label-cluster1')
 //     {
-//     node('general-pod-label-cluster1') {
-// 		stage('Check Ubuntu Release') {
-// 		    container('ubuntu-image') {
-// 		        sh "cat /etc/*-release"
+//         node('general-pod-label-cluster1') {
+// 		    stage('Check Ubuntu Release') {
+// 		        container('ubuntu-image') {
+// 		            sh "cat /etc/*-release"
 // 			}
 // 		}
 // 	}

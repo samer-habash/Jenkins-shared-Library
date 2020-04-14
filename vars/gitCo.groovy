@@ -8,18 +8,17 @@ def call(Map gitcoParams) {
     ])
   }
 
-// @Library('jenkins-library@master')
+// @Library('general-jenkins-library@master') _
 //
 // pipeline {
 //     agent any
 //     stages {
 //         stage('Git Checkout') {
 //             steps {
-//             gitCheckout(
+//             gitCo(
 //                 branch: "master",
-//                 url: "https://github.com/spring-projects/spring-petclinic.git"
-//             )
-//             }
+//                 url: "https://github.com/samer-habash/-hw-14-.git"
+//             )}
 //          }
 //     }
 // }
