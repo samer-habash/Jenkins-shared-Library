@@ -10,8 +10,10 @@ def call(Map podParams, code) {
 				image: podParams.image,
 				command: 'cat',
 				ttyEnabled: 'true')
-		])
+		]) {
+		code()
 	}
+}
 
 
 
