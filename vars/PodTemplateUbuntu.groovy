@@ -13,7 +13,7 @@ def call(String PodLabel, code) {
 				name: 'ubuntu-image',
 				image: 'ubuntu:bionic',
 				command: 'cat',
-				tty: true)
+				ttyEnabled: true)
 		]) {
 		code()
 	}
