@@ -11,12 +11,6 @@ def call(Map kubernetesParams, code) {
 				command: 'cat',
 				ttyEnabled: 'true')
 		]) {
-		node(values.label) {
-		    stage('Building Container') {
-		        container(kubernetesParams.name) {
-		           code()
-		        }
-		    }
-		}
+            code()
+        }
 	}
-}
