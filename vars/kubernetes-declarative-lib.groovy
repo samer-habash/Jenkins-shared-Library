@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call(Map kubernetesParams) {
+def call(Map kubernetesParams, code) {
 	kubernetes(
 		cloud: kubernetesParams.cloud,
 		label: kubernetesParams.label,
@@ -11,7 +11,10 @@ def call(Map kubernetesParams) {
 				command: 'cat',
 				ttyEnabled: 'true')
 		])
-	}
+		{
+		    code()
+		}
+}
 
 // // Apply on local Jenkins pipeline Job
 // @Library('general-jenkins-library@master') _
