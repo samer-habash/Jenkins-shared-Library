@@ -1,24 +1,17 @@
 #!/usr/bin/env groovy
 
-def call(Map kubernetesParams, code) {
-	kubernetes {
-		cloud: kubernetesParams.cloud,
-		label: kubernetesParams.label,
+def call(Map containerParams, code) {
 		containers: [
 			containerTemplate {
-				name: kubernetesParams.name,
-				image: kubernetesParams.image,
+				name: containerParams.name,
+				image: containerParams.image,
 				command: 'cat',
 				ttyEnabled: 'true')
 		    ]}
+		    {
+	            code()
+	        }
 	    }
-	    {
-	        code()
-	    }
-	}
-
-
-
 
 // // Apply on local Jenkins pipeline Job
 // @Library('general-jenkins-library@master') _

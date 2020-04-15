@@ -68,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586939008495</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Change in kubernetes-declarative-lib.groovy">
+      <created>1586939326775</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586939326775</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -76,14 +83,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Change in kubernetes-declarative-lib.groovy" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="532" y="97" width="912" height="911" key="CommitChangelistDialog2" timestamp="1586939008458">
+    <state x="532" y="97" width="912" height="911" key="CommitChangelistDialog2" timestamp="1586939326740">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="532" y="97" width="912" height="911" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1586939008458" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1586939010421">
+    <state x="532" y="97" width="912" height="911" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1586939326740" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1586939327947">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1586939010421" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1586939327947" />
     <state x="764" y="467" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586938331745">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
