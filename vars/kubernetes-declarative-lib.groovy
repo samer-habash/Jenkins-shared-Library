@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call(Map kubernetesParams, code) {
+def call(Map kubernetesParams) {
 	kubernetes(
 		cloud: kubernetesParams.cloud,
 		label: kubernetesParams.label,
