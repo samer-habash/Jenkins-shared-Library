@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caf32092-e1aa-4f7f-b69b-ecf8864d7eb1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Jenkins-Shared-Library.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Jenkins-Shared-Library.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vars/kubernetes-declarative-lib.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/vars/containerTemplateLib.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +15,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aZFVps950SN2GzAnR9LPiTbqzj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -21,7 +23,70 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Aviel-Advanced-Devops/advanced-devops" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$USER_HOME$/PycharmProjects/Aviel-Advanced-Devops/Lesson8" />
+      <recent name="$USER_HOME$/PycharmProjects/Aviel-Advanced-Devops/Lesson8/Step-1" />
+      <recent name="$USER_HOME$/PycharmProjects/Aviel-Advanced-Devops/Lesson8/step-1" />
+      <recent name="$USER_HOME$/PycharmProjects/Aviel-Advanced-Devops/Lesson7/BONUS/Step-2/mysql" />
+      <recent name="$USER_HOME$/PycharmProjects/Aviel-Advanced-Devops/Lesson7/BONUS/Step-1/aws-autoscaling" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$USER_HOME$/PycharmProjects/Aviel-Advanced-Devops/Lesson8/BONUS" />
+      <recent name="$USER_HOME$/PycharmProjects/Aviel-Advanced-Devops/Lesson8" />
+      <recent name="$USER_HOME$/PycharmProjects/Aviel-Advanced-Devops/Lesson8/step-1" />
+      <recent name="$USER_HOME$/PycharmProjects/Aviel-Advanced-Devops/Lesson7/BONUS/Step-2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Terraform.Plan aws_launch_template.dokuwiki_launch_template">
+    <configuration name="Plan aws_instance." type="#org.intellij.plugins.hcl.terraform.run.TerraformConfigurationType" factoryName="Terraform Plan" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="plan -target=aws_instance." />
+      <option name="workingDirectory" value="$USER_HOME$/PycharmProjects/Aviel-Advanced-Devops/Lesson8/Step-2" />
+      <option name="PROGRAM_PARAMETERS" value="plan -target=aws_instance." />
+      <option name="WORKING_DIRECTORY" value="file://$USER_HOME$/PycharmProjects/Aviel-Advanced-Devops/Lesson8/Step-2" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Plan aws_instance.as" type="#org.intellij.plugins.hcl.terraform.run.TerraformConfigurationType" factoryName="Terraform Plan" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="plan -target=aws_instance.as" />
+      <option name="workingDirectory" value="$USER_HOME$/PycharmProjects/Aviel-Advanced-Devops/Lesson8" />
+      <option name="PROGRAM_PARAMETERS" value="plan -target=aws_instance.as" />
+      <option name="WORKING_DIRECTORY" value="file://$USER_HOME$/PycharmProjects/Aviel-Advanced-Devops/Lesson8" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Plan aws_launch_template.dokuwiki_launch_template" type="#org.intellij.plugins.hcl.terraform.run.TerraformConfigurationType" factoryName="Terraform Plan" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="plan -target=aws_launch_template.dokuwiki_launch_template" />
+      <option name="workingDirectory" value="$USER_HOME$/PycharmProjects/Aviel-Advanced-Devops/Lesson8/BONUS" />
+      <option name="PROGRAM_PARAMETERS" value="plan -target=aws_launch_template.dokuwiki_launch_template" />
+      <option name="WORKING_DIRECTORY" value="file://$USER_HOME$/PycharmProjects/Aviel-Advanced-Devops/Lesson8/BONUS" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Terraform.Plan aws_instance.as" />
+        <item itemvalue="Terraform.Plan aws_instance." />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -83,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586939570211</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Change in kubernetes-declarative-lib.groovy">
+      <created>1586940823961</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586940823961</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -91,14 +163,50 @@
     <option name="LAST_COMMIT_MESSAGE" value="Change in kubernetes-declarative-lib.groovy" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="532" y="97" width="912" height="911" key="CommitChangelistDialog2" timestamp="1586939570176">
+    <state x="622" y="234" width="732" height="637" key="#Inspections" timestamp="1587200911669">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="532" y="97" width="912" height="911" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1586939570176" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1586939571163">
+    <state x="622" y="234" width="732" height="637" key="#Inspections/67.27.1853.1053@67.27.1853.1053" timestamp="1587200911669" />
+    <state x="655" y="291" width="666" height="522" key="#Plan_aws_launch_template.dokuwiki_launch_template" timestamp="1587196980639">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1586939571163" />
+    <state x="655" y="291" width="666" height="522" key="#Plan_aws_launch_template.dokuwiki_launch_template/67.27.1853.1053@67.27.1853.1053" timestamp="1587196980639" />
+    <state x="632" y="354" width="770" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587116084416">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="632" y="354" width="770" height="396" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1587116084416" />
+    <state x="532" y="97" width="912" height="911" key="CommitChangelistDialog2" timestamp="1586940823920">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="532" y="97" width="912" height="911" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1586940823920" />
+    <state x="776" y="310" width="495" height="484" key="FileChooserDialogImpl" timestamp="1587285253610">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="776" y="310" width="495" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1587285253610" />
+    <state width="1830" height="278" key="GridCell.Tab.0.bottom" timestamp="1587135776262">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1587135776262" />
+    <state width="1830" height="278" key="GridCell.Tab.0.center" timestamp="1587135776261">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="278" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1587135776261" />
+    <state width="1830" height="278" key="GridCell.Tab.0.left" timestamp="1587135776261">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="278" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1587135776261" />
+    <state width="1830" height="278" key="GridCell.Tab.0.right" timestamp="1587135776262">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1587135776262" />
+    <state x="649" y="154" key="SettingsEditor" timestamp="1587109162621">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="649" y="154" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1587109162621" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1586940824999">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1586940824999" />
     <state x="764" y="467" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586938331745">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -107,9 +215,9 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="699" y="453" width="578" height="199" key="git4idea.remote.GitConfigureRemotesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586935592698" />
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1586936099078">
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1587159062188">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1586936099078" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1587159062188" />
   </component>
 </project>

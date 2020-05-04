@@ -2,7 +2,7 @@
 
 def call(String PodLabel, code) {
 	podTemplate(
-		cloud: 'kubernetes-Cluster2',
+		cloud: 'kubernetes-cluster1',
 		label: PodLabel,
 		containers: [
 			containerTemplate(
@@ -22,12 +22,12 @@ def call(String PodLabel, code) {
 // @Library('general-jenkins-library@master') _
 //
 // PodTemplateGeneral(
-//     cloud: 'kubernetes-Cluster2',
-//     label:'general-pod-label-cluster2',
+//     cloud: 'kubernetes-cluster1',
+//     label:'pod-label-cluster1',
 //     name: 'maven-image',
 //     image: 'maven:3.3.9-jdk-8-alpine')
 //     {
-//         node('general-pod-label-cluster2') {
+//         node('pod-label-cluster1') {
 // 		    stage('Check Maven Release') {
 // 		        container('maven-image') {
 // 		            gitCo(

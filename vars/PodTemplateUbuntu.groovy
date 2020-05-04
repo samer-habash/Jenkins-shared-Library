@@ -6,7 +6,7 @@
 
 def call(String PodLabel, code) {
 	podTemplate(
-		cloud: 'kubernetes-Cluster1',
+		cloud: 'kubernetes-cluster1',
 		label: PodLabel,
 		containers: [
 			containerTemplate(
@@ -22,9 +22,9 @@ def call(String PodLabel, code) {
 // Applies in local jenkins
 // @Library('general-jenkins-library@master') _
 //
-// PodTemplateUbuntu('general-pod-label-cluster1')
+// PodTemplateUbuntu('pod-label-cluster1')
 //     {
-//         node('general-pod-label-cluster1') {
+//         node('pod-label-cluster1') {
 // 		    stage('Check Ubuntu Release') {
 // 		        container('ubuntu-image') {
 // 		            sh "cat /etc/*-release"
